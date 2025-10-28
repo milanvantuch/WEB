@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Medical Care s.r.o. – Oficiální stránky</title>
+  <meta name="description" content="Top Medical Care s.r.o. – fyzioterapie, rehabilitační a fyzikální medicína v Miroslavi. Kontakt: dr.milan@seznam.cz." />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#475569; --accent:#2563eb; --card:#f8fafc;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:var(--bg);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:960px;margin-inline:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px}
+    .logo{font-weight:700;font-size:1.125rem}
+    nav a{margin-left:16px}
+    .hero{padding:56px 0;text-align:center}
+    .hero h1{font-size:clamp(28px,5vw,42px);margin:0 0 12px}
+    .hero p{margin:0 auto;max-width:60ch;color:var(--muted)}
+    .cta{margin-top:20px;display:inline-block;background:var(--accent);color:white;padding:12px 18px;border-radius:999px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid #e5e7eb}
+    h2{margin-top:40px;margin-bottom:8px;font-size:1.25rem}
+    footer{margin-top:48px;padding:24px 0;border-top:1px solid #e5e7eb;color:var(--muted);font-size:0.95rem}
+    .contact{display:grid;gap:8px}
+    .small{font-size:.95rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Top Medical Care s.r.o.</div>
+      <nav>
+        <a href="#o-nas">O nás</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Fyzioterapie a rehabilitace v Miroslavi</h1>
+      <p>Zde napište 1–2 věty o tom, co děláte. Ideálně konkrétně a s benefitem pro návštěvníka.</p>
+      <a class="cta" href="#kontakt">Napište mi</a>
+    </section>
+
+    <section id="o-nas">
+      <h2>O nás</h2>
+      <p>Top Medical Care s.r.o. poskytuje specializovanou ambulantní péči v oborech fyzioterapie a rehabilitační a fyzikální medicíny. Najdete nás na adrese Kostelní 183/2, 671 72 Miroslav (okres Znojmo). Zaměřujeme se na individuální přístup a praktická řešení obtíží pohybového aparátu.</p>
+    </section>
+
+    <section id="sluzby">
+      <h2>Služby / Nabídka</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Fyzioterapie</strong>
+          <p class="small">Individuální cvičení, mobilizační techniky a nácvik správných pohybových stereotypů.</p>
+        </div>
+        <div class="card">
+          <strong>Rehabilitační a fyzikální medicína</strong>
+          <p class="small">Aplikace fyzikálních metod (např. elektroterapie, ultrazvuk) pro úlevu od bolesti a podporu hojení.</p>
+        </div>
+        <div class="card">
+          <strong>Specializovaná ambulantní péče</strong>
+          <p class="small">Vyšetření a doporučení léčebného plánu dle indikace a potřeby pacienta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <div class="contact">
+        <div><strong>E‑mail:</strong> <a href="mailto:dr.milan@seznam.cz">dr.milan@seznam.cz</a></div>
+        <div><strong>Adresa:</strong> Kostelní 183/2, 671 72 Miroslav</div>
+        <div class="small">Objednání a dotazy prosím primárně e‑mailem.</div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Top Medical Care s.r.o. — IČO: 11817721 — Sídlo: Vinohrady 3500/79, 669 02 Znojmo.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
